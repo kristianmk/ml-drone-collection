@@ -3,7 +3,7 @@ behaviors:
   Drone:
     trainer_type: ppo
     keep_checkpoints: 10
-    max_steps: 1e7
+    max_steps: 1e8
     time_horizon: 1000
     summary_freq: 10000
     threaded: true
@@ -17,8 +17,8 @@ behaviors:
     hyperparameters:
       batch_size: 2048
       buffer_size: 20480
-      learning_rate: 0.0003
-      beta: 0.005
+      learning_rate: 0.0006
+      beta: 0.01
       epsilon: 0.2
       lambd: 0.95
       num_epoch: 3
